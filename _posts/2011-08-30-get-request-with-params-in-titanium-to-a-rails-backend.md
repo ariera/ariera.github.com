@@ -26,7 +26,7 @@ Say our rails app is a blog at the domain: _http://www.railsblog.com_, and we wa
     postsReq.send(params);
 {% endhighlight %}
 
-Now it took me some time to realize why but **that code doesn't work as you would expect** it to work. Although we clearly specified that we wanted to do a `GET` request it will do it as a `POST`. The reason why this happens is that **when you pass any parameter to the _send_ method it automatically converts the request into `POST`**.
+It took me some time to understand why, but **that code doesn't work as you would expect** it to work. Although we clearly specified that we wanted to do a `GET` request it will do it as a `POST`. The reason why this happens is that **when you pass any parameter to the _send_ method it automatically converts the request into `POST`**.
 
 My solution was to manually construct the url with parameters using `encondeURI`:
 
