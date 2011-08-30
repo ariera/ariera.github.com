@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shortcuts (&#8984;&#8594; &amp; &#8984;&#8592;) with Textmate and Snow Leopard
+comments: true
 ---
 
 {{ page.title }}

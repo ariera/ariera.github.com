@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GET request with params in Titanium to a Rails backend
+comments: true
 ---
 
 {{ page.title }}

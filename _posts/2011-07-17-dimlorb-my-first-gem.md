@@ -1,6 +1,7 @@
 ---
 layout: post
 title: diMLOrb, my first gem
+comments: true
 ---
 
 {{ page.title }}
