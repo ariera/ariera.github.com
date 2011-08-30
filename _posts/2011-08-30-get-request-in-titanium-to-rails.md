@@ -54,9 +54,12 @@ Completed 500 Internal Server Error in 1ms
 NoMethodError (undefined method `ref' for nil:NilClass):
   
 
-Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
-Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
-Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/
+    rescues/_trace.erb (1.1ms)
+Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/
+    rescues/_request_and_response.erb (0.9ms)
+Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/
+    rescues/diagnostics.erb within rescues/layout (4.8ms)
 {% endhighlight %}
 
 that `NoMethodError (undefined method 'ref' for nil:NilClass)` error drove me crazy for a while. Apparently this is due to a mix of user agent and Mime Types handled uncorrectly by Rails. Following [this stackoverflow answer](http://stackoverflow.com/questions/5126085/ruby-on-rails-mobile-application/5130756#5130756) I did this:
