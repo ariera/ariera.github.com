@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shortcuts (&#8984;→ & &#8984;←) with Textmate and Snow Leopard
+title: Shortcuts (&#8984;&rarr; & &#8984;&larr;) with Textmate and Snow Leopard
 ---
 
 {{ page.title }}
