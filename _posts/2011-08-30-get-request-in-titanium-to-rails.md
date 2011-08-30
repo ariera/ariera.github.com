@@ -71,7 +71,8 @@ that `NoMethodError (undefined method 'ref' for nil:NilClass)` error drove me cr
     before_filter :handle_titanium
     
     def titanium_user_agent?
-      @mobile_user_agent ||= ( request.env["HTTP_USER_AGENT"] && request.env["HTTP_USER_AGENT"][/Titanium/] )
+      @mobile_user_agent ||= ( request.env["HTTP_USER_AGENT"] && 
+        request.env["HTTP_USER_AGENT"][/Titanium/] )
     end
     
     def handle_titanium
