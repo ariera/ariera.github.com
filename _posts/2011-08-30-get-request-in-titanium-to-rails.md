@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Titanium&Rails] GET request with params in Titanium to a Rails backend
+title: GET request with params in Titanium to a Rails backend
 ---
 
 {{ page.title }}
@@ -46,7 +46,7 @@ And that finally worked. But was that all? Of course not ;-P
 ## Titanium enable your Rails app:
 When testing the iPhone app with my local copy of this railsblog I got the most _weird succint not-descriptive_ error Rails ever gave me:
 
-```
+{% highlight bash %}
 Started GET "/posts?language=spanish&author=ariera" for 127.0.0.1
   Processing by PostController#index as 
 Completed 500 Internal Server Error in 1ms
@@ -57,9 +57,9 @@ NoMethodError (undefined method `ref' for nil:NilClass):
 Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
 Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
 Rendered .../gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
-```
+{% endhighlight %}
 
-that `NoMethodError (undefined method `ref' for nil:NilClass)` error drove me crazy for a while. Apparently this is due to a mix of user agent and Mime Types handled uncorrectly by Rails. Following [this stackoverflow answer](http://stackoverflow.com/questions/5126085/ruby-on-rails-mobile-application/5130756#5130756) I did this:
+that `NoMethodError (undefined method 'ref' for nil:NilClass)` error drove me crazy for a while. Apparently this is due to a mix of user agent and Mime Types handled uncorrectly by Rails. Following [this stackoverflow answer](http://stackoverflow.com/questions/5126085/ruby-on-rails-mobile-application/5130756#5130756) I did this:
 
 {% highlight ruby %}
     # config/initializers/mime_types.rb
