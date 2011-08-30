@@ -8,7 +8,7 @@ title: GET request with params in Titanium to a Rails backend
 
 <p class="meta">30 Agaust 2011 - Madrid</p>
 
-I'm currently developing an iPhone app with [Appcelerator's Titanium](http://www.appcelerator.com/) that communicates with a Rails backend. Doing so I found a few problems and here is how I solved them. This is the first time I work with Titanium, so don't expect something fanzy ; )
+I'm currently developing an iPhone app with [Appcelerator's Titanium](http://www.appcelerator.com/) that communicates with a Rails backend. Doing so I found a few problems and here is how I solved them. This is the first time I work with Titanium, so don't expect something fancy ; )
 
 ## Ajax GET request with params:
 We'll use `Titanium.Network.HTTPClient`, if you have never used it I suggest that you take a look a this [awesome example in the Titanium wiki](http://wiki.appcelerator.org/display/guides/Handling+Remote+Data+with+HTTPClient+and+JSON) that perfectly covers the basics.
