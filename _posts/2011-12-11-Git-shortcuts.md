@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A few Git shortcuts
+title: Configuring Git after formatting
 comments: true
 ---
 
@@ -11,6 +11,10 @@ comments: true
 Simply copy&paste this in your console:
 
 {% highlight bash %}
+#Author
+git config --global user.name "Alejandro Riera"
+git config --global user.email ariera@whatever.com
+
 # Abbreviations
 git config --global alias.st status
 git config --global alias.co checkout
